@@ -8,10 +8,11 @@ Author: David of UG
 Author URI: https://david.ug
 Text Domain: acf-hide-fied-label
 Domain Path: /lang
-License: GPL
+License: GPL-3.0+
 */
+Namespace ACFHideFieldLabel;
 
-if( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if(!defined( 'ABSPATH' )) exit; // Exit if accessed directly
 
 define('ACF_HIDE_FIELD_LABEL_SETTING_FILE', __FILE__);
 define('ACF_HIDE_FIELD_LABEL_SETTING_DIR', __DIR__);
@@ -29,16 +30,8 @@ if(is_admin()) :
 			<p><?php _e( 'This plugin requires PHP 5.4+. Your PHP Version: '.phpversion(), 'acf-hide-field-label' ); ?></p>
 		</div>
 	<?php	
-    }
-    
-	function wp_version_notice() {
-	?>
-		<div class="notice notice-error is-dismissible">
-			<p><?php _e( 'This plugin requires WordPress version 4.5+ '.phpversion(), 'acf-hide-field-label' ); ?></p>
-		</div>
-	<?php	
-    }
-    
+	}
+		
 	function acf_not_installed_notice() {
 	?>
 		<div class="notice notice-error is-dismissible">
@@ -55,9 +48,10 @@ if(is_admin()) :
 			if( function_exists( 'acf_not_installed_notice') ) add_action( 'admin_notices', 'acf_not_installed_notice' );
 
 		}else{
-			require_once ACF_HIDE_FIELD_LABE_LSETTING_DIR.'/inc/hide-label.php';
+			require_once ACF_HIDE_FIELD_LABEL_SETTING_DIR.'/inc/hide.label.php';
 		}
 
 	}
 
 endif;
+		

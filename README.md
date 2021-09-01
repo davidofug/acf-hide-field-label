@@ -1,4 +1,4 @@
-# Hide Field Labels for Advanced Custom Fields at Administration side
+# ACF Hide field label
 
 ACF Hide field label is a WordPress plugin that enables WordPress users who use Advanced Custom Field plugin at the administration side hide or show field labels.
 

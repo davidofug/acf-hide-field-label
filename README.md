@@ -4,7 +4,7 @@ ACF Hide field label is a WordPress plugin that enables WordPress users who use 
 
 ### Why hide labels?
 
-1. Some label text for fields especially the group and repeater fields contradict sub label field text which ends up in poor User experience.
+Some label text for fields especially the group and repeater fields contradict sub label field text which ends up in poor User experience.
 
 ### Requirements
 
